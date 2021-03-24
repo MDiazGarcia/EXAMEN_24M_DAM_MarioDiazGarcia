@@ -11,13 +11,18 @@ public class EXAMEN_24M_PRIMO {
 		System.out.println("Introduce un número para averiguar si es primo o no:");
 		num=ent.nextInt();
 		
-		if((num%2)==1 || (num%3)==1||(num%5)==1) {
+		if((num%2)==0 || (num%3)==0||(num%5)==0) {
 			
-			System.out.println("no es primo");
+			System.out.println("No es primo");
 			System.out.println(num+"%2="+(num%2));
 			System.out.println(num+"%3="+(num%3));
 			System.out.println(num+"%5="+(num%5));
 			
+		}else{
+			System.out.println("Es primo");
+			System.out.println(num+"%2="+(num%2));
+			System.out.println(num+"%3="+(num%3));
+			System.out.println(num+"%5="+(num%5));
 		}
 		
 	}
